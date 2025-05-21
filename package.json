@@ -1,0 +1,14 @@
+{
+  "name": "interview",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"npm run dev --workspace=client\" \"npm run dev --workspace=server\""
+  },
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "devDependencies": {
+    "concurrently": "^8.0.0"
+  }
+}
